@@ -1,0 +1,45 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>ReadEventServlet</servlet-name>
+        <servlet-class>cs.vsu.app.servlet.ReadEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadEventServlet</servlet-name>
+        <url-pattern>WEB-INF/views/read-events</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateEventServlet</servlet-name>
+        <servlet-class>cs.vsu.app.servlet.CreateEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateEventServlet</servlet-name>
+        <url-pattern>WEB-INF/views/create-event</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateEventServlet</servlet-name>
+        <servlet-class>cs.vsu.app.servlet.UpdateEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateEventServlet</servlet-name>
+        <url-pattern>WEB-INF/views/update-event</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <servlet-class>cs.vsu.app.servlet.DeleteEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <url-pattern>WEB-INF/views/delete-event</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>WEB-INF/views/read-events.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
